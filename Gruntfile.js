@@ -458,6 +458,18 @@ module.exports = function ( grunt ) {
       },
 
       /**
+       * When the Gruntfile changes, we just want to lint it. In fact, when
+       * your Gruntfile changes, it will automatically be reloaded!
+       */
+      build_config: {
+        files: 'build.config.js',
+        tasks: [ 'jshint:src', 'karma:unit:run', 'copy:build_appjs', 'copy:build_app_assets', 'copy:build_vendor_assets' ],
+        options: {
+          livereload: true
+        }
+      },
+
+      /**
        * When our JavaScript source files change, we want to run lint them and
        * run our unit tests.
        */

@@ -62,6 +62,11 @@ module.exports = {
    */
   vendor_files: {
     js: [
+      'vendor/jquery/dist/jquery.js',
+      'vendor/blueimp-file-upload/js/vendor/jquery.ui.widget.js',
+      'vendor/blueimp-file-upload/js/jquery.iframe-transport.js',
+      'vendor/blueimp-file-upload/js/jquery.fileupload.js',
+      'vendor/cloudinary-jquery-file-upload/cloudinary-jquery-file-upload.js',
       'vendor/angular/angular.js',
       'vendor/angular-bootstrap/ui-bootstrap-tpls.min.js',
       'vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js',
